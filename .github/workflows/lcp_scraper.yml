@@ -23,11 +23,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-
-      - name: Run script
+      - name: Run Python script
+        env:
+          GOOGLE_KEY: ${{ secrets.GOOGLE_KEY }}
         run: |
+          echo "$GOOGLE_KEY" > key.json
           python gossip.py
-
 
 
 
