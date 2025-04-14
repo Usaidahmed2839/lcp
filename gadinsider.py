@@ -10,8 +10,7 @@ url = 'https://gadinsider.com'
 
 # Google Sheets setup
 scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-creds = ServiceAccountCredentials.from_json_keyfile_name(
-    "C:/Users/nasir.mehmood/Desktop/aerobic-gantry-447911-f3-579fc3b0a891.json", scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name('key.json', scope)
 client = gspread.authorize(creds)
 
 # Open the Google Sheet by its name
