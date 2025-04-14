@@ -30,7 +30,7 @@ jobs:
 
         run: |
           echo "$GOOGLE_KEY" > key.json
-          echo "$GOOGLE_KEY2" > key.json
+          echo "$GOOGLE_KEY2" > key2.json
           python gossip.py
           python gadinsider.py
 
