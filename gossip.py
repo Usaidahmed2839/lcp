@@ -53,26 +53,25 @@ try:
         sheet.append_row(header)
 
     print("Entering while loop...")
-    while True:
-        print("Fetching LCP values...")
-        mobile_lcp = fetch_lcp('mobile')
-        desktop_lcp = fetch_lcp('desktop')
+    # while True:
+    print("Fetching LCP values...")
+    mobile_lcp = fetch_lcp('mobile')
+    desktop_lcp = fetch_lcp('desktop')
 
-        print(f"Mobile LCP: {mobile_lcp}, Desktop LCP: {desktop_lcp}")
-        if mobile_lcp is None or desktop_lcp is None:
-            print("Skipping data row append due to missing values.")
-        else:
-            # Get the current timestamp
-            now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    print(f"Mobile LCP: {mobile_lcp}, Desktop LCP: {desktop_lcp}")
+    if mobile_lcp is None or desktop_lcp is None:
+        print("Skipping data row append due to missing values.")
+    else:
+        # Get the current timestamp
+        now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-            # Prepare the data row
-            data_row = [now, 'Mobile', mobile_lcp, 'Desktop', desktop_lcp]
+        # Prepare the data row
+        data_row = [now, 'Mobile', mobile_lcp, 'Desktop', desktop_lcp]
+        print("Appending data row to Google Sheet...")
+        sheet.append_row(data_row)
 
-            print("Appending data row to Google Sheet...")
-            sheet.append_row(data_row)
-
-        print("Sleeping for 24 hours...")
-        time.sleep(24 * 60 * 60)  # Sleep for 24 hours
+    # print("Sleeping for 24 hours...")
+    # time.sleep(24 * 60 * 60)  # Sleep for 24 hours
 
 except Exception as e:
     print(f"An error occurred: {e}")
