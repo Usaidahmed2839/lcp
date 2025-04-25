@@ -2,7 +2,7 @@ name: Run Instagram Scraper Hourly
 
 on:
   schedule:
-    - cron: '0 9 * * *'  # every day at 9
+    - cron: '0 4 * * *'  # every day at 9
   workflow_dispatch:      # allows manual trigger
 
 jobs:
