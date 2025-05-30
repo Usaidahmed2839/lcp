@@ -35,9 +35,9 @@ jobs:
           echo "$GOOGLE_KEY2" > key2.json
           echo "$GOOGLE_KEY3" > key3.json
           echo "$GOOGLE_KEY4" > key4.json
-          # python gossip.py
-          # python gadinsider.py
-          # python celebbox.py
+          python gossip.py
+          python gadinsider.py
+          python celebbox.py
           python celebpost.py
 
   
