@@ -5,7 +5,7 @@ from datetime import datetime
 import time
 
 # Replace with your actual API key and target URL
-api_key = 'AIzaSyDZkQaGUq3HY8CsXW7nI0dnfpbDsFW-8E0'
+api_key = 'AIzaSyAYxOpVzGyU3jsVJe26a_aNFn8rsdugHZo'
 url = 'https://celebinbox.com/ '
 
 # Google Sheets setup
