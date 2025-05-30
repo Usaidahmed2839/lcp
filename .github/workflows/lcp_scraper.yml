@@ -32,15 +32,15 @@ jobs:
           GOOGLE_KEY5: ${{ secrets.GOOGLE_KEY5 }}
 
         run: |
-          # echo "$GOOGLE_KEY" > key.json
-          # echo "$GOOGLE_KEY2" > key2.json
-          # echo "$GOOGLE_KEY3" > key3.json
-          # echo "$GOOGLE_KEY4" > key4.json
+          echo "$GOOGLE_KEY" > key.json
+          echo "$GOOGLE_KEY2" > key2.json
+          echo "$GOOGLE_KEY3" > key3.json
+          echo "$GOOGLE_KEY4" > key4.json
           echo "$GOOGLE_KEY5" > key5.json
-          # python gossip.py
-          # python gadinsider.py
-          # python celebbox.py
-          # python celebpost.py
+          python gossip.py
+          python gadinsider.py
+          python celebbox.py
+          python celebpost.py
           python geosuper.py
 
   
