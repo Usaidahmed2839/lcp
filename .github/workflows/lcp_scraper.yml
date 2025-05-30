@@ -28,6 +28,7 @@ jobs:
           GOOGLE_KEY: ${{ secrets.GOOGLE_KEY }}
           GOOGLE_KEY2: ${{ secrets.GOOGLE_KEY2 }}
           GOOGLE_KEY3: ${{ secrets.GOOGLE_KEY3 }}
+          GOOGLE_KEY4: ${{ secrets.GOOGLE_KEY4 }}
 
         run: |
           echo "$GOOGLE_KEY" > key.json
