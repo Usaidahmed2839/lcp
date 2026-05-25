@@ -10,7 +10,7 @@ url = 'https://celebinbox.com/ '
 
 # Google Sheets setup
 scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-creds = ServiceAccountCredentials.from_json_keyfile_name('key3.json', scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name('key6.json', scope)
 client = gspread.authorize(creds)
 
 # Open the Google Sheet by its name
