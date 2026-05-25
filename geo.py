@@ -183,7 +183,7 @@ def fetch_lcp(url, strategy):
 
             print(f"{strategy} LAB data used")
 
-        lcp_seconds = round(lcp_ms / 1000, 2)
+        lcp_seconds = round(lcp_ms / 1000, 5)
 
         return lcp_seconds
 
