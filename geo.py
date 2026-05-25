@@ -14,7 +14,8 @@ creds = ServiceAccountCredentials.from_json_keyfile_name('key6.json', scope)
 client = gspread.authorize(creds)
 
 # Open the Google Sheet by its name
-sheet = client.open('lcp geo').sheet1
+# sheet = client.open('lcp geo').sheet1
+sheet = client.open_by_key('1t62-kGyrF6ROgsaUd8kjGqgxaHaUABsk-XsBf6kUgW8').sheet1
 
 def fetch_lcp(strategy):
     """Fetch the Largest Contentful Paint (LCP) for a given strategy (mobile or desktop)."""
