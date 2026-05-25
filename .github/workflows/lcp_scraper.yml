@@ -39,11 +39,11 @@ jobs:
           echo "$GOOGLE_KEY4" > key4.json
           echo "$GOOGLE_KEY5" > key5.json
           echo "$GOOGLE_KEY5" > key6.json
-          # python gossip.py
-          # python gadinsider.py
-          # python celebbox.py
-          # python celebpost.py
-          # python geosuper.py
+          python gossip.py
+          python gadinsider.py
+          python celebbox.py
+          python celebpost.py
+          python geosuper.py
           python geo.py
 
   
